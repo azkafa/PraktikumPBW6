@@ -16,8 +16,8 @@ class User extends Authenticatable
          * The attributes that are mass assignable.
          * @var array<int, string>
          */
-    // Nama    : Azka Faris Akbar
-    // NIM     : 6706220020
+    // Nama    : Davin Wahyu Wardana
+    // NIM     : 6706223003
     // Kelas   : D3IF-4603
     protected $fillable = [
         'username',
@@ -51,10 +51,10 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function setPasswordAttribute($password)
-    {
-        if ($password) {
-            $this->attributes['password'] = bcrypt($password);
-        }
-    }
+    // public function setPasswordAttribute($password)
+    // {
+    //     if ($password) {
+    //         $this->attributes['password'] = bcrypt($password);
+    //     }
+    // }
 }
